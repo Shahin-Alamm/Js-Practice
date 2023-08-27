@@ -233,3 +233,40 @@ console.log(clock2());
 
 console.log(clock1()); // 1st value 4 er por theke barbe 
 console.log(clock1());
+
+
+
+//class-9 
+const nums = [1,2,3,4,5,6,7,8,9]
+const part = nums.slice(2,6)
+//slice holo aray modde index num diye nirdisto element ber kore ana 
+const remove = nums.splice(2,6)
+//splice er kaj holo index num er modde je element gulo thakbe segulo dekhaeb 
+console.log( remove);
+console.log(part);
+// console.log(nums);
+
+
+const joinNumber = [ 2, 3,4, 5, 6, 6, 7, 7]
+const together = joinNumber.join(' and ')
+//join er maddhome arrray elemenet er majhe kno kisu add kora jabe 
+console.log( together);
+
+
+//class- 10 
+ const breaks = [1,2,3,4 ,5,6,7,8,9]
+ for(let i=0; i<breaks.length; i++){
+    console.log(breaks[i]);
+    if(breaks[i]>6){
+        break; //break holo js er keyword
+    }
+ }
+
+
+ const con = [1,-2,3,4 ,-5,6,7,-8,9]
+ for(let i = 0; i<con.length; i++){
+    if(con[i]<0){
+        continue; // negetive num skip korbe 
+    }
+    console.log(con[i]);
+ }
